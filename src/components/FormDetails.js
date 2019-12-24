@@ -14,7 +14,9 @@ class FormDetails extends Component {
     return (
       <MultiThemeProvider>
         <React.Fragment>
-          <AppBar title="Please Enter User Details" />
+          <AppBar 
+          title="Please Enter User Details" 
+          />
           <TextField
             hintText="Enter First Name..."
             floatingLabelText="First Name"
@@ -43,6 +45,7 @@ class FormDetails extends Component {
             label="Continue"
             secondary={true}
             styles={styles.button}
+            onClick={this.continue}
           />
         </React.Fragment>
       </MultiThemeProvider>
