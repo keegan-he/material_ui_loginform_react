@@ -11,11 +11,16 @@ class FormDetails extends Component {
   };
 
   render() {
-    const { values } = this.props;
     return (
       <MultiThemeProvider>
         <React.Fragment>
           <AppBar title="Please Enter User Details" />
+          <TextField 
+          hintText="Enter First Name..."
+          floatingLabelText="First Name"
+          onChange={this.props.handleChange('firstName')}
+          defaultValue={this.props.values.firstName}
+          />
         </React.Fragment>
       </MultiThemeProvider>
     );
