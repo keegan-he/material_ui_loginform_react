@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import FormDetails from './FormDetails';
 
 class Form extends Component {
-  constructor(props) {
-    super(props);
+
     state = {
       step: 1,
       firstName: '',
@@ -13,7 +12,7 @@ class Form extends Component {
       city: '',
       bio: ''
     };
-  }
+
 
   // Go to next step
   nextStep = () => {

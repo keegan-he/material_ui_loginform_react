@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Form from './components/Form';
+import './App.css';
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
-        
+      <div className="App">
+        <Form />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
