@@ -4,12 +4,20 @@ import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
-export class FormDetails extends Component {
+class FormDetails extends Component {
+  continue = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  };
+
   render() {
+    const { values } = this.props;
     return (
-      <div>
-        <h1>hi</h1>
-      </div>
+      <MultiThemeProvider>
+        <React.Fragment>
+          <AppBar title="Please Enter User Details" />
+        </React.Fragment>
+      </MultiThemeProvider>
     );
   }
 }
