@@ -20,30 +20,30 @@ class PersonalDetails extends Component {
       <MultiThemeProvider>
         <React.Fragment>
           <AppBar 
-          title="Please Enter User Details" 
+          title="Please Enter Personal Details" 
           />
           <TextField
-            hintText="Enter First Name..."
-            floatingLabelText="First Name"
-            onChange={this.props.handleChange('firstName')}
-            defaultValue={this.props.values.firstName}
+            hintText="Enter Your Occupation"
+            floatingLabelText="Occupation"
+            onChange={this.props.handleChange('occupation')}
+            defaultValue={this.props.values.occupation}
           />
 
           <br />
 
           <TextField
-            hintText="Enter Last Name..."
-            floatingLabelText="Last Name"
-            onChange={this.props.handleChange('lastName')}
-            defaultValue={this.props.values.lastName}
+            hintText="Enter Your City"
+            floatingLabelText="City"
+            onChange={this.props.handleChange('city')}
+            defaultValue={this.props.values.city}
           />
           <br />
 
           <TextField
-            hintText="Enter Email Address"
-            floatingLabelText="Email"
-            onChange={this.props.handleChange('email')}
-            defaultValue={this.props.values.email}
+            hintText="Enter Your Bio"
+            floatingLabelText="Bio"
+            onChange={this.props.handleChange('bio')}
+            defaultValue={this.props.values.bio}
           />
           <br />
           <RaisedButton
@@ -51,6 +51,13 @@ class PersonalDetails extends Component {
             secondary={true}
             styles={styles.button}
             onClick={this.continue}
+          />
+
+          <RaisedButton
+            label="Back"
+            secondary={false}
+            styles={styles.button}
+            onClick={this.back}
           />
         </React.Fragment>
       </MultiThemeProvider>
