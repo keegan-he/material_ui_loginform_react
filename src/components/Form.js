@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormDetails from './FormDetails';
+import Confirm from './Confirm';
 import PersonalDetails from './PersonalDetails';
 
 class Form extends Component {
@@ -62,7 +63,13 @@ class Form extends Component {
           />
         );
         case 3: 
-            return <h1>Confirm</h1>
+        return (
+          <Confirm
+            nextStep={this.nextStep}
+            previousStep={this.previousStep}
+            values={values}
+          />
+        );
         case 4: 
             return <h1>Success</h1>
     }

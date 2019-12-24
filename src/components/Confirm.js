@@ -4,7 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import { List, ListItem } from 'material-ui/List';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class FormDetails extends Component {
+class Confirm extends Component {
   continue = e => {
     e.preventDefault();
 
@@ -17,30 +17,7 @@ class FormDetails extends Component {
     return (
       <MultiThemeProvider>
         <React.Fragment>
-          <AppBar title="Please Enter User Details" />
-          <TextField
-            hintText="Enter First Name..."
-            floatingLabelText="First Name"
-            onChange={this.props.handleChange('firstName')}
-            defaultValue={this.props.values.firstName}
-          />
-
-          <br />
-
-          <TextField
-            hintText="Enter Last Name..."
-            floatingLabelText="Last Name"
-            onChange={this.props.handleChange('lastName')}
-            defaultValue={this.props.values.lastName}
-          />
-          <br />
-
-          <TextField
-            hintText="Enter Email Address"
-            floatingLabelText="Email"
-            onChange={this.props.handleChange('email')}
-            defaultValue={this.props.values.email}
-          />
+          <AppBar title="Confirm User Details" />
           <br />
           <RaisedButton
             label="Continue"
@@ -60,4 +37,4 @@ const styles = {
   }
 };
 
-export default FormDetails;
+export default Confirm;
