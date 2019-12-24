@@ -35,7 +35,7 @@ class Confirm extends Component {
 
             <ListItem primaryText="City" secondaryText={city} />
 
-            <ListItem primaryText="Bio=" secondaryText={bio} />
+            <ListItem primaryText="Bio" secondaryText={bio} />
           </List>
           <br />
           <RaisedButton
