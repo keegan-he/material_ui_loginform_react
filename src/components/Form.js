@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FormDetails from './FormDetails';
 import Confirm from './Confirm';
+import Success from './Success';
 import PersonalDetails from './PersonalDetails';
 
 class Form extends Component {
@@ -71,7 +72,7 @@ class Form extends Component {
           />
         );
         case 4: 
-            return <h1>Success</h1>
+            return <Success />;
     }
   }
 }
