@@ -33,7 +33,7 @@ class Form extends Component {
     });
   };
 
-  // Handle fields change
+  // Handle input fields change
   handleChange = input => e => {
     this.setState({ [input]: e.target.value });
   };
